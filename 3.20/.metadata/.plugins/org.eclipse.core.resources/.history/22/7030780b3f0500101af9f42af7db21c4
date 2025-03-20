@@ -1,0 +1,19 @@
+package text;
+
+public class 循环 {
+
+	public static void main(String[] args) {
+	int i,j,k,n = 100, m = 0;
+	while(n < 1000)
+	{
+		i = n/100;
+		j = (n/10)%10;
+		k = n %10;
+		if(Math.pow(i,3) + Math.pow(j,3) + Math.pow(k,3)== n)
+			System.out.println("找到第"+(++m)"个水仙花数："+n);
+		n++;
+	}
+		
+	}
+
+}
